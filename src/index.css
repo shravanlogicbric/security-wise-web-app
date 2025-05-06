@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme{
+  --main-x-padding: 120px;
+
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --button-gradient-start:#1ADFF2;
+  --button-gradient-end:#02F3C0;
+  --button-shadow:26, 224, 242;
+}
+
+html.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --button-gradient-start:#1ADFF2;
+  --button-gradient-end:#02F3C0;
+  --button-shadow:26, 224, 242;
+}
+
+body{
+  background-color: var(--bg-color)
+ 
+}
