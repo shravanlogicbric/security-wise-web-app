@@ -9,15 +9,14 @@ const WhatIsSecurityWyseCardItem = ({
   return (
     <div
       key={item.title}
-      className="relative group overflow-hidden  p-10 bg-gradient-to-t from-[#050505] to-[#0F0F0F] border-1 border-[#A1A1A1]/20 rounded-2xl"
+      className="relative rounded-2xl  z-10  hover:bg-gradient-to-tr from-[var(--button-gradient-start)]/10 via-black/50 via-70% to-[var(--button-gradient-start)]/20 hover:shadow-sm shadow-[rgb(var(--button-shadow))]/30 bg-transparent/5 border-1 border-white/10"
     >
-      <div className="absolute inset-0 z-0 blur-3xl bg-white/5 rounded-2xl" />
-      <div className="absolute inset-0 z-0 backdrop-blur-md bg-white/5 group-hover:bg-white/10 transition-all duration-300 rounded-2xl" />
-
-      <div className="relative z-10">
-        <img src={item.icon} />
-        <div className="text-white text-[28px]">{item.title}</div>
-        <div className="text-[#A1A1A1] text-[18px]">{item.description}</div>
+      <div className="relative group overflow-hidden  p-10 rounded-2xl backdrop-blur-md bg-white/5">
+        <div className="relative z-10">
+          <img src={item.icon} />
+          <div className="text-white text-[28px] mt-12">{item.title}</div>
+          <div className="text-[#A1A1A1] text-[18px]">{item.description}</div>
+        </div>
       </div>
     </div>
   );
