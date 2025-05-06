@@ -4,7 +4,6 @@ import React from "react";
 type GradientFillButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
-  className?: string;
 };
 
 const GradientFillButton: React.FC<GradientFillButtonProps> = ({

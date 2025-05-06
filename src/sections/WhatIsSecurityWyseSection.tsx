@@ -19,31 +19,31 @@ const WhatIsSecurityWyseSection = () => {
   ];
 
   return (
-    <Container>
-      <div className="sticky top-[35%] max-md:top-0 items-center justify-center text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-black max-md:text-[40px] md:text-[120px]">
-        What is SecurityWyse?
+    <Container className="pt-36">
+      <div className="min-h-[100vh] sticky top-[35%] max-md:top-0">
+        <div className="items-center justify-center text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-black max-md:text-[40px] md:text-[120px]">
+          What is SecurityWyse?
+        </div>
       </div>
 
-      <div className="min-h-[200vh] flex flex-col items-center gap-y-20 pb-50 md:pb-70">
+      <div className="min-h-[100vh] flex flex-col items-center gap-y-20 max-md:pb-48 pb-52">
         {whatIsSecurityWyseContent.map((item, index) => {
           const position = positions[index % 3];
           const top = [
+            "max-md:top-30",
+            "max-md:top-40",
             "max-md:top-50",
             "max-md:top-60",
             "max-md:top-70",
-            "max-md:top-80",
-            "max-md:top-90",
           ];
-          const ml = ![0, 1, 2].includes(index) ? "md:ml-[30%]" : "md:ml-0";
+          const ml = ![0, 1, 2].includes(index) ? "md:ml-[30%]" : "md:ml-[0%]";
 
           return (
             <div
               key={index}
-              className={`sticky top-50 ${ml} w-full ${position.align} flex mt-4 ${position.zIndex} ${top[index]}`}
+              className={`sticky md:top-50 ${ml} w-full ${position.align} flex mt-4 ${position.zIndex} ${top[index]}`}
             >
-              <div className="md:w-[30%]">
-                <WhatIsSecurityWyseCardItem item={item} />
-              </div>
+              <WhatIsSecurityWyseCardItem item={item} />
             </div>
           );
         })}

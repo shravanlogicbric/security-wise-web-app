@@ -1,5 +1,5 @@
 import GradientFillButton from "@src/components/buttons/GradientFillButton";
-import GrayButton from "@src/components/buttons/GrayButton";
+import Button from "@src/components/buttons/Button";
 import { Container } from "@src/components/shared/Container";
 
 const HeroSection = () => (
@@ -15,7 +15,7 @@ const HeroSection = () => (
     </div>
     <div className="flex gap-4 my-4">
       <GradientFillButton>Join the Wyse Network</GradientFillButton>
-      <GrayButton>Learn More</GrayButton>
+      <Button>Learn More</Button>
     </div>
   </Container>
 );

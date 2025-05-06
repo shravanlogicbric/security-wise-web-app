@@ -4,7 +4,6 @@ import React from "react";
 type GradientOutlineButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
-  className?: string;
 };
 
 const GradientOutlineButton: React.FC<GradientOutlineButtonProps> = ({
