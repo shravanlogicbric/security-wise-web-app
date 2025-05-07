@@ -3,47 +3,28 @@ import { Container } from "@src/components/shared/Container";
 import { whatIsSecurityWyseContent } from "@src/constants/whatIsSecurityWyseContent";
 
 const WhatIsSecurityWyseSection = () => {
-  const positions = [
-    {
-      align: "justify-start",
-      zIndex: "md:z-0",
-    },
-    {
-      align: "justify-center",
-      zIndex: "md:z-10",
-    },
-    {
-      align: "justify-end",
-      zIndex: "md:z-20",
-    },
-  ];
-
   return (
     <Container className="pt-36">
-      <div className="min-h-[100vh] sticky top-[35%] max-md:top-0">
+      <div className="max-sm:min-h-[30vh] min-h-[70vh] sticky top-[35%] max-md:top-0">
         <div className="items-center justify-center text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-black max-md:text-[40px] md:text-[120px]">
           What is SecurityWyse?
         </div>
       </div>
 
-      <div className="min-h-[100vh] flex flex-col items-center gap-y-20 max-md:pb-48 pb-52">
+      <div className="flex flex-col gap-50 md:gap-10 mb-48">
         {whatIsSecurityWyseContent.map((item, index) => {
-          const position = positions[index % 3];
           const top = [
-            "max-md:top-30",
-            "max-md:top-40",
-            "max-md:top-50",
-            "max-md:top-60",
-            "max-md:top-70",
-          ];
-          const ml = ![0, 1, 2].includes(index) ? "md:ml-[30%]" : "md:ml-[0%]";
-
+            "max-sm:top-30 md:z-0 md:top-30",
+            "max-sm:top-40 md:ml-[35%] md:z-2 md:top-30",
+            "max-sm:top-50 md:ml-[70%] md:z-4 md:top-30",
+            "max-sm:top-60 md:ml-[15%] md:z-1 md:top-120",
+            "max-sm:top-70 md:ml-[50%] md:z-3 ",
+          ][index];
           return (
-            <div
-              key={index}
-              className={`sticky md:top-50 ${ml} w-full ${position.align} flex mt-4 ${position.zIndex} ${top[index]}`}
-            >
-              <WhatIsSecurityWyseCardItem item={item} />
+            <div className={`sticky ${top} md:w-[30%]`}>
+              <div className="w-full h-full">
+                <WhatIsSecurityWyseCardItem item={item} />
+              </div>
             </div>
           );
         })}

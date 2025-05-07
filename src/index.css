@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+
 
 @theme{
   --main-x-padding: 120px;

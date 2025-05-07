@@ -11,7 +11,7 @@ const SecurityPlansCardItem = ({ item }: SecurityPlansCardItemProps) => {
       className="bg-gradient-to-b from-[#F2F2F2] to-0 rounded-2xl p-10 min-w-[280px]"
     >
       <img src={item.icon} className="md:w-16" />
-      <div className="gap-0.5">
+      <div className="gap-0.5 mt-10">
         <div className="text-base font-medium md:text-2xl md:font-light">
           {item.title}
         </div>

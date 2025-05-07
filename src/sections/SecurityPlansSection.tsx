@@ -15,7 +15,7 @@ const SecurityPlansSection = () => {
 
       {/* Horizontal scroll section */}
       <div className="w-full flex justify-center my-16 max-md:my-5">
-        <div className="flex gap-6 w-max overflow-x-auto scrollbar-hide px-4">
+        <div className="flex gap-6 w-max overflow-x-auto px-4 bg scrollbar scrollbar-w-0">
           {securityServicePlansContent.map((item, index) => (
             <div key={index} className="min-w-[300px] max-w-[300px]">
               <SecurityPlansCardItem item={item} />

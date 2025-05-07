@@ -21,11 +21,11 @@ const WaysSecuritySection = () => {
   return (
     <>
       <div className="bg-gray-100 rounded-t-full w-full items-center flex flex-col max-md:min-h-[250px] min-h-[700px] relative ">
-        <div className=" pt-50 max-md:pt-14 px-14">
-          <div className="text-7xl max-md:text-3xl text-center font-sans text-black md:px-96">
+        <div className=" pt-50 max-md:pt-14 px-[25%]">
+          <div className="text-7xl max-md:text-3xl text-center font-sans text-black">
             The Wyse Ways of Security
           </div>
-          <p className="pt-4 max-md:pt-2 text-[#747474] text-xl max-md:text-sm font-light md:px-72 text-center">
+          <p className="pt-4 max-md:pt-2 text-[#747474] text-xl max-md:text-sm font-light text-center">
             We believe the future of safety is shared. Everyone should have the
             tools to see risk coming and help each other avoid it
           </p>
