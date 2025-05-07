@@ -1,4 +1,4 @@
-import { WaysSecurityPersonImage } from "@src/assets/svgs";
+import { WaysSecurityPersonImage } from "@src/assets/images";
 import SecurityWaysCardItem from "@src/components/card/SecurityWaysCardItem";
 import { securityWaysContent } from "@src/constants/securityWaysContent";
 

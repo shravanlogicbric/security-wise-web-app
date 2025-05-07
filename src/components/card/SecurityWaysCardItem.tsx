@@ -11,7 +11,7 @@ const SecurityWaysCardItem = ({ item }: SecurityWaysCardItemProps) => {
     >
       <img src={item.icon} className="md:w-16" />
       <div className="gap-0.5">
-        <div className="text-base font-medium md:text-2xl md:font-light">
+        <div className="text-black text-base font-medium md:text-2xl md:font-light">
           {item.title}
         </div>
         <div className="text-[#747474] text-sm font-light md:text-base">

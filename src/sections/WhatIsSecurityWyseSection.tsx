@@ -5,7 +5,7 @@ import { whatIsSecurityWyseContent } from "@src/constants/whatIsSecurityWyseCont
 const WhatIsSecurityWyseSection = () => {
   return (
     <Container className="pt-36">
-      <div className="max-sm:min-h-[30vh] min-h-[70vh] sticky top-[35%] max-md:top-0">
+      <div className="max-sm:min-h-[30vh] min-h-[70vh] sticky top-[30%] max-md:top-0">
         <div className="items-center justify-center text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-black max-md:text-[40px] md:text-[120px]">
           What is SecurityWyse?
         </div>
