@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-[#191919] h-[1px]" />
-      <div className="flex max-sm:flex-col justify-between gap-y-4 items-center my-8">
+      <div className="flex max-sm:flex-col justify-between gap-y-4 items-center py-8">
         <div className="text-white text-base text-center">
           © Copyright 2025. All Rights Reserved
         </div>
