@@ -5,11 +5,11 @@ import { HeroSectionPhoneHandImage } from "@src/assets/images";
 
 const HeroSection = () => (
   <Container className="flex flex-col relative xl:mb-100">
-    <div>
-      <div className="text-white font-normal md:text-7xl max-md:text-4xl md:max-w-3xl">
+    <div className="xl:w-[50%]">
+      <div className="text-white font-normal xl:text-6xl md:text-5xl max-md:text-4xl md:max-w-3xl">
         Stay Safe. Stay Aware. Stay Wyse.
       </div>
-      <div className="text-[#A1A1A1] font-normal md:text-[20] max-md:text-[16] mt-4">
+      <div className="text-[#A1A1A1] font-normal lg:text-[20px] max-md:text-[16px] mt-4">
         Real-time alerts, verified reports, and smart safety tools for people,
         places, and workplaces.
       </div>
@@ -18,7 +18,7 @@ const HeroSection = () => (
       <GradientFillButton>Join the Wyse Network</GradientFillButton>
       <Button>Learn More</Button>
     </div>
-    <div className="-mx-4 md:px-[var(--main-x-padding)] transition duration-1000 md:-mx-[var(--main-x-padding)] xl:absolute -z-10 xl:-mt-20 w-screen overflow-hidden">
+    <div className="-mx-4 xl:absolute -z-10 xl:-mt-20 md:-mt-15 overflow-hidden md:pr-[var(--main-x-padding)] max-md:pr-4">
       <img
         src={HeroSectionPhoneHandImage}
         alt="Hero Phone Hand"

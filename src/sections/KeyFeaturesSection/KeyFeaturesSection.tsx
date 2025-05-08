@@ -3,7 +3,7 @@ import CardsSectionView from "./CardsSectionView";
 
 const KeyFeaturesSection = () => {
   return (
-    <Container>
+    <Container className="max-sm:mb-20 mb-52">
       <div className="max-sm:mt-20 mt-40">
         <div className="text-white text-6xl max-sm:text-[28px] text-center font-normal">
           SecurityWyse Key Features

@@ -6,6 +6,7 @@ const Header = () => (
     <h1 className="text-[var(--text-color)] font-medium font-[Helvetica] text-2xl max-sm:text-base">
       Securitywise
     </h1>
+
     <GradientOutlineButton>Request a Demo</GradientOutlineButton>
   </Container>
 );

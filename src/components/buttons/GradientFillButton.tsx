@@ -13,7 +13,7 @@ const GradientFillButton: React.FC<GradientFillButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className="bg-gradient-to-r from-[var(--button-gradient-start)] via-[var(--button-gradient-end)] to-[var(--button-gradient-end)] hover:shadow-2xl shadow-[rgb(var(--button-shadow))]/30 rounded-full px-6 py-4"
+      className="select-none bg-gradient-to-r from-[var(--button-gradient-start)] via-[var(--button-gradient-end)] to-[var(--button-gradient-end)] hover:shadow-2xl shadow-[rgb(var(--button-shadow))]/30 rounded-full px-6 py-4"
     >
       <div className="max-sm:text-sm text-black">{children}</div>
     </button>
