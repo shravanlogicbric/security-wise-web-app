@@ -18,7 +18,7 @@ const HeroSection = () => (
       <GradientFillButton>Join the Wyse Network</GradientFillButton>
       <Button>Learn More</Button>
     </div>
-    <div className="-mx-4 xl:absolute -z-10 xl:-mt-20 md:-mt-15 overflow-hidden md:pr-[var(--main-x-padding)] max-md:pr-4">
+    <div className="xl:absolute -z-10 xl:-mt-20  overflow-hidden xl:mr-[var(--main-x-padding)]">
       <img
         src={HeroSectionPhoneHandImage}
         alt="Hero Phone Hand"
